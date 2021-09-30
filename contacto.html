@@ -4,14 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <main>
-        <ul>
-            <li><a href="./index.html">Home</a></li>
-        </ul>
-    </main>
+    
+    <header class="header">
+        <div class="logo">
+            <a href="./index.html">
+                <h1> UTN
+
+                </h1>
+            </a>
+        </div>
+</header>
+        <main id="maincontent">
+            <nav class="navbar">
+                <ul>
+                    <li> <a href="./index.html">Home</a></li>
+                    <li><a href="./noticia1.html">Noticia 1</a></li>
+                    <li><a href="./noticia2.html">Noticia 2</a></li>  
+                    <li><a href="./contacto.html">contacto</a></li>          
+                </ul>
+    
+            </nav>
+            <form action="./js/indx.js" method="post" id="formcontact">
+            <div>
+                <label class="aaa">Nombre: </label>
+                <input type="text" name="nmbre" placeholder="ingrese su nombre" required>
+            </div>
+            
+            <div>
+                <label>Apellido:</label>
+                <input type="text" name="apellido" placeholder="ingrese su apellido" required>
+            </div>
+            <div>
+                <label>Email:</label>
+                <input type="email" name="email" required pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)">
+
+            </div>
+ 
+        <div>
+            <label> Localidad:</label>
+            <select name="localidad" id=""required>
+                <option value="">Seleccione un provincia...</option>
+                <option value="Caba">Caba</option>
+                <option value="Bariloche">Bariloche</option>
+                <option value="Tucuman">Tucuman</option>
+    
+        </select>
+        </div>
+        <div><label class="comentario">Comentario:</label>
+        <textarea name="Comentario" cols="30" rows="10"></textarea>
+        </div>
+
+        <div>
+            <label>Quiero suscribirme</label>
+            <input type="checkbox" name="noticias">
+
+        </div>
+
+        <div>
+    <input type="button" value="Escribenos!!" class="btn-envio">
+</div>
+
+            </form>
+
+            
+        </main> 
+        <footer class="footer">
+            <span>&copy; 2021-UTN</span>
+            <span>desarrollado por <a href="misitio">yo</span>
+            </p><p><address>BS AS- Capital</address></p>    </footer>
     
 </body>
 </html>
